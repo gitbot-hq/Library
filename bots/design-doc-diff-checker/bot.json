@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "design-doc-diff-checker",
+  "name": "Design Doc Diff Checker",
+  "description": "Compare design docs and check TM Forum and OpenAPI 3 standards",
+  "category": "Documentation",
+  "about": "Drop two versions of a design document into any folder and get a focused comparison. This bot finds what changed, what disappeared, and how the design holds up against TM Forum and OpenAPI 3 standards — all without touching your files.",
+  "features": [
+    "Compare two design documents and surface changes",
+    "Check TM Forum guideline alignment",
+    "Validate OpenAPI 3 spec conformance"
+  ],
+  "examplePrompt": "Compare these two design documents and show me the differences and any standards gaps.",
+  "author": { "github": "arjunKumbakkara", "name": "Arjun Kumbakkara" },
+  "mascot": { "body": "bear", "color": "brand-sky", "activity": "thinking" },
+  "emoji": "📐",
+  "agent": "opencode",
+  "model": "opencode/nemotron-3.5-lightning-free",
+  "permissionMode": "plan",
+  "allowedTools": ["Read", "Grep", "Glob", "Bash"]
+}
