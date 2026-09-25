@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "sheet-consolidator",
+  "name": "Sheet Consolidator",
+  "description": "Merges spreadsheet sheets into one table. Never overwrites your files.",
+  "category": "Developer workflow",
+  "about": "Point it at a folder of spreadsheets and it works out what each sheet holds, proposes how to merge them, and asks you to confirm. It matches records across sheets, flags duplicates for your approval, and writes the result to a new file or sheet without touching your originals.",
+  "features": [
+    "Profile every sheet in your folder",
+    "Match and dedupe records with your approval",
+    "Write results to a new file, never overwrite"
+  ],
+  "examplePrompt": "Consolidate the sheets in this folder into one table, matching leads by phone number and then email.",
+  "author": {
+    "github": "Guru-raghav3245",
+    "name": "Guru Raghav"
+  },
+  "mascot": {
+    "body": "cloud",
+    "color": "brand-sky",
+    "activity": "working"
+  },
+  "emoji": "🧩",
+  "agent": "claude-code",
+  "permissionMode": "ask-permissions"
+}

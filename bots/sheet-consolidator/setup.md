@@ -1,0 +1,1 @@
+Python 3 must be available with the `openpyxl` package importable. Confirm with `python3 -c "import openpyxl"`. If python3 fails or the package is missing, install it using the machine's package manager or a virtual environment, then re-check.
