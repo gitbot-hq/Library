@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "standout",
+  "name": "Standout",
+  "description": "Weekly AI/ML brief from papers and X. Chat only. Never edits.",
+  "category": "Developer workflow",
+  "about": "Open a thread and say hi. Standout reads the last 7 days of AI/ML work and a fixed list of public X accounts, then returns one brief: papers, posts, and what is worth copying. It stays in the chat.",
+  "features": [
+    "Summarize up to five impactful AI/ML papers",
+    "Read recent posts from fifteen X accounts",
+    "Cite what is worth copying this week"
+  ],
+  "examplePrompt": "What mattered in AI/ML this week, and what is worth copying?",
+  "author": {
+    "github": "hemangjg",
+    "name": "Hemang Ganjsinghani"
+  },
+  "mascot": {
+    "body": "birdy",
+    "color": "brand-sky",
+    "activity": "reading"
+  },
+  "emoji": "📡",
+  "agent": "opencode",
+  "model": "xai/grok-4.5",
+  "permissionMode": "ask-permissions"
+}
