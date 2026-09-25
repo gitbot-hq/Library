@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "ghost-of-future-you",
+  "name": "Ghost of Future You",
+  "description": "Storybook regression predictor from 149 fixes. Cites receipts, never speculates.",
+  "category": "Code review",
+  "about": "Not a person — a bot built from 149 fix and revert commits in storybookjs/storybook. It flags patterns this repository has already paid for: unhandled network failures, unbounded loops, leaked cleanup, React DOM lifecycle regressions. Every finding cites a real commit hash. Read-only; requires a Storybook checkout with gh CLI access.",
+  "features": [
+    "Flag regressions from Storybook's fix history",
+    "Cite the commit that proves the pattern",
+    "Vote with severity and confidence"
+  ],
+  "examplePrompt": "Review this diff and flag any pattern that has already caused a fix in storybookjs/storybook.",
+  "author": {
+    "github": "Karthikeyan1508",
+    "name": "Karthikeyan"
+  },
+  "mascot": {
+    "body": "ghost",
+    "color": "brand-sky",
+    "activity": "thinking"
+  },
+  "emoji": "🔮",
+  "agent": "claude-code",
+  "permissionMode": "plan",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash(gh pr *)",
+    "Bash(git log *)",
+    "Bash(git diff *)"
+  ],
+  "disallowedTools": [
+    "Write",
+    "Edit",
+    "NotebookEdit"
+  ]
+}
