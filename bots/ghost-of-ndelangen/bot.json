@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "ghost-of-ndelangen",
+  "name": "Ghost of ndelangen",
+  "description": "Storybook reviewer channeling ndelangen. Test coverage first, read-only.",
+  "category": "Code review",
+  "about": "A reviewer channeling ndelangen eye for test coverage, error handling, and story coverage in storybookjs/storybook. Paste a diff for a review with a severity vote. Requires a Storybook checkout with gh CLI access; it only reads, never edits. Note: drawn from 113 comments across 32 PRs.",
+  "features": [
+    "Review Storybook diffs for missing tests",
+    "Flag unhandled failure paths in new states",
+    "Vote approve or request changes with severity"
+  ],
+  "examplePrompt": "Review my changes for missing test coverage and unhandled failure paths.",
+  "author": {
+    "github": "Karthikeyan1508",
+    "name": "Karthikeyan"
+  },
+  "mascot": {
+    "body": "ghost",
+    "color": "brand-candy",
+    "activity": "thinking"
+  },
+  "emoji": "👻",
+  "agent": "claude-code",
+  "permissionMode": "plan",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash(gh pr *)",
+    "Bash(git log *)",
+    "Bash(git diff *)"
+  ],
+  "disallowedTools": [
+    "Write",
+    "Edit",
+    "NotebookEdit"
+  ]
+}
