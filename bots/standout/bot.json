@@ -23,5 +23,5 @@
   "emoji": "📡",
   "agent": "opencode",
   "model": "xai/grok-4.5",
-  "permissionMode": "ask-permissions"
+  "permissionMode": "plan"
 }
