@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "ghost-of-jreinhold",
+  "name": "Ghost of JReinhold",
+  "description": "Storybook reviewer channeling JReinhold. Story coverage first, read-only.",
+  "category": "Code review",
+  "about": "A reviewer channeling JReinhold eye for story coverage, test coverage, error handling, and documentation accuracy in storybookjs/storybook. Paste a diff for a review with a severity vote. Requires a Storybook checkout with gh CLI access; it only reads, never edits. Note: drawn from 184 comments across 46 PRs.",
+  "features": [
+    "Review Storybook diffs for missing stories",
+    "Flag unhandled failure paths and stale docs",
+    "Vote approve or request changes with severity"
+  ],
+  "examplePrompt": "Review my changes for missing stories, missing tests, and documentation left behind.",
+  "author": {
+    "github": "Karthikeyan1508",
+    "name": "Karthikeyan"
+  },
+  "mascot": {
+    "body": "ghost",
+    "color": "brand-leaf",
+    "activity": "reading"
+  },
+  "emoji": "🧿",
+  "agent": "claude-code",
+  "permissionMode": "plan",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash(gh pr *)",
+    "Bash(git log *)",
+    "Bash(git diff *)"
+  ],
+  "disallowedTools": [
+    "Write",
+    "Edit",
+    "NotebookEdit"
+  ]
+}
