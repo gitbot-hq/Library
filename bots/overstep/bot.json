@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "overstep",
+  "name": "Overstep",
+  "description": "Tests a REST API or MCP server against an authorization matrix you wrote",
+  "category": "Testing",
+  "about": "Runs the overstep CLI against a target you nominate, after confirming the policy your matrix declares and showing the plan before anything is sent. It explains every request the target should have refused and did not, with the evidence behind each one, and says what the run could not see.",
+  "features": [
+    "Confirm the intended policy before anything is sent",
+    "Run overstep's own validate, plan and run commands",
+    "Explain each access-control gap with its evidence"
+  ],
+  "examplePrompt": "Validate my authorization matrix, run it read-only against the local target, and explain what got through.",
+  "author": { "github": "kabiri-labs", "name": "Ahmad Kabiri" },
+  "mascot": { "body": "doggy", "color": "brand-ember", "activity": "working" },
+  "emoji": "🚦",
+  "agent": "claude-code",
+  "permissionMode": "ask-permissions"
+}
