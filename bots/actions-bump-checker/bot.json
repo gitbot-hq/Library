@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "actions-bump-checker",
+  "name": "Actions Bump Checker",
+  "description": "Checks if GitHub Actions major bumps are safe for your workflows. Read-only.",
+  "category": "Maintenance",
+  "about": "Dependabot tells you a major version bump exists, not whether it will break your workflows. This bot reads the release notes of every major version in between and checks each breaking change against how your workflow files actually use the action. You get a SAFE, RISKY or UNCLEAR verdict with file and line references.",
+  "features": [
+    "Scan every uses: line in your workflows",
+    "Match breaking changes to your workflow files",
+    "Get a SAFE, RISKY or UNCLEAR verdict per action"
+  ],
+  "examplePrompt": "Check whether the outdated GitHub Actions in this repo are safe to bump to their latest major versions.",
+  "author": { "github": "Amanshrivastab", "name": "Aman" },
+  "mascot": { "body": "cat", "color": "brand-sky", "activity": "reading" },
+  "emoji": "🔎",
+  "agent": "claude-code",
+  "permissionMode": "ask-permissions",
+  "allowedTools": ["Read", "Grep", "Bash"]
+}
