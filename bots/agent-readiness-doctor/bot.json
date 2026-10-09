@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "agent-readiness-doctor",
+  "name": "Agent Readiness Doctor",
+  "description": "Finds and fixes stale or unsafe agent instructions with review",
+  "category": "Repository care",
+  "about": "Checks AGENTS.md, CLAUDE.md, Cursor and Copilot rules, and agent settings against the actual repository. It uses agent-context-doctor and agent-readiness-kit when installed, confirms each finding in the code, and proposes minimal fixes. It edits only what you approve, then re-runs the checks.",
+  "features": [
+    "Catch missing scripts, moved files and contradictions",
+    "Flag unsafe directives and risky agent permissions",
+    "Apply approved fixes and re-run the audits"
+  ],
+  "examplePrompt": "Check this repo's AGENTS.md and CLAUDE.md for stale commands, broken links and unsafe advice, and propose fixes.",
+  "author": { "github": "alipajand", "name": "Ali Pajand" },
+  "mascot": { "body": "heart", "color": "brand-leaf", "activity": "reading" },
+  "emoji": "🩺",
+  "agent": "claude-code",
+  "permissionMode": "ask-permissions"
+}
