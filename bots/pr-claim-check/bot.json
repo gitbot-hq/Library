@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "pr-claim-check",
+  "name": "PR Claim Check",
+  "description": "Lists what a PR description claims that the diff doesn't back up",
+  "category": "Code review",
+  "about": "Reads a pull request description against its own diff. buzzcut checks the names, files and test claims mechanically, then the bot goes through every sentence that says the change does something and finds the code that does it. You get a short list of claims to confirm, each with its evidence or the lack of it.",
+  "features": [
+    "Check names, files and test claims with buzzcut",
+    "Match each behavior claim to the hunk that does it",
+    "Leave the verdict on each unbacked claim to you"
+  ],
+  "examplePrompt": "Check the description of the open PR on this branch. Which claims does the diff not back up?",
+  "author": {
+    "github": "Shiva-Xs",
+    "name": "Shivateja Janjirala"
+  },
+  "mascot": {
+    "body": "cat",
+    "color": "brand-leaf",
+    "activity": "reading"
+  },
+  "emoji": "✂️",
+  "agent": "claude-code",
+  "permissionMode": "ask-permissions",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash"
+  ],
+  "disallowedTools": [
+    "Edit",
+    "Write",
+    "NotebookEdit",
+    "WebFetch",
+    "WebSearch",
+    "Agent",
+    "Task",
+    "Read(**/.env)",
+    "Read(**/.env.*)",
+    "Bash(git push *)",
+    "Bash(git commit *)",
+    "Bash(git add *)",
+    "Bash(git checkout *)",
+    "Bash(git switch *)",
+    "Bash(git reset *)",
+    "Bash(git restore *)",
+    "Bash(git clean *)",
+    "Bash(git stash *)",
+    "Bash(git merge *)",
+    "Bash(git rebase *)",
+    "Bash(git pull *)",
+    "Bash(gh pr checkout *)",
+    "Bash(gh pr comment *)",
+    "Bash(gh pr review *)",
+    "Bash(gh pr edit *)",
+    "Bash(gh pr merge *)",
+    "Bash(rm *)",
+    "Bash(mv *)",
+    "Bash(sudo *)"
+  ]
+}
