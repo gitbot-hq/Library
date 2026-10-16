@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "veripatch-gate",
+  "name": "VeriPatch Gate",
+  "description": "Reviews npm dependency fixes using VeriPatch verification evidence",
+  "category": "Code review",
+  "about": "Reviews npm security dependency updates using VeriPatch's JSON evidence and the actual pull request diff. Reports whether the evidence supports a merge candidate or requires human review, with specific verification gaps and risks. Never edits code, approves changes, or merges pull requests.",
+  "features": [
+    "Compare verified package versions with the PR diff",
+    "Check re-scan, build, test and CI outcomes",
+    "Identify missing evidence and review blockers"
+  ],
+  "examplePrompt": "Review this npm dependency update using VeriPatch's verification report and the PR diff.",
+  "author": {
+    "github": "amarjaleelbanbhan",
+    "name": "Amar Jaleel"
+  },
+  "mascot": {
+    "body": "triangle",
+    "color": "brand-leaf",
+    "activity": "thinking"
+  },
+  "emoji": "🛡️",
+  "agent": "claude-code",
+  "permissionMode": "ask-permissions",
+  "allowedTools": [
+    "Read",
+    "Grep",
+    "Glob",
+    "Bash"
+  ],
+  "disallowedTools": [
+    "Edit",
+    "Write",
+    "NotebookEdit"
+  ]
+}
