@@ -1,0 +1,25 @@
+{
+  "slug": "backend-doctor-fixer",
+  "name": "Backend Doctor Fixer",
+  "description": "Prepare verified backend-doctor fixes on your feature branch",
+  "category": "Maintenance",
+  "about": "Fix actionable findings in TypeScript Node.js and NestJS backends with backend-doctor-cli. Create a feature branch first; the bot verifies a focused patch and prepares PR evidence for you to publish. By Alexey Yamkin: https://github.com/yamkin29/backend-doctor; npm: https://www.npmjs.com/package/backend-doctor-cli.",
+  "features": [
+    "Find backend bugs with backend-doctor-cli",
+    "Verify focused fixes with scans and project checks",
+    "Prepare PR evidence for manual GitHub publication"
+  ],
+  "examplePrompt": "Scan this TypeScript backend on my feature branch, fix a small batch, run the checks, and prepare a PR summary. Leave Git publication to me.",
+  "author": {
+    "github": "yamkin29",
+    "name": "Alexey Yamkin"
+  },
+  "mascot": {
+    "body": "bear",
+    "color": "brand-leaf",
+    "activity": "working"
+  },
+  "emoji": "🩺",
+  "agent": "codex",
+  "permissionMode": "ask-permissions"
+}
