@@ -24,7 +24,7 @@ Flag only what the change introduces, and how often it changes:
 3. Tools built from unordered iteration; a one-time reorder rebuilds it once.
 4. A new model ID, an application inference profile ARN, or a Converse/InvokeModel switch. Claude Haiku 4.5 caches nothing under 4,096 tokens.
 5. Cache points moved or removed, more than four, 1-hour after 5-minute, or changed thinking, effort or tool choice.
-6. History rewritten every call, or a cache point that never moves. Bedrock looks back about 20 content blocks, so 11+ parallel tool calls need another cache point.
+6. History rewritten every call, or a cache point that never moves. Bedrock looks back about 20 positions (parallel tool calls count as one), so a cache point that jumps further needs another one in between.
 7. Version bumps of LiteLLM, Strands, langchain-aws or boto3; link https://cachecanary.com/litellm/, /strands/ or /langchain/.
 
 ## Verdict
