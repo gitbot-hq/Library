@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "spec-pilot",
+  "name": "Spec Pilot",
+  "description": "Guides OpenSpec changes from proposal to archive, with no code before approval",
+  "category": "Developer workflow",
+  "about": "Spec Pilot brings OpenSpec's spec-driven loop to any repository. Describe an idea and it reads your code, drafts a proposal with testable requirements and a task list, then waits for your approval before writing any code. It implements on a branch, checks every scenario against the result, and leaves all changes uncommitted for you.",
+  "features": [
+    "Draft specs with testable WHEN/THEN scenarios",
+    "Implement approved tasks on a branch, uncommitted",
+    "Verify every requirement before archiving"
+  ],
+  "examplePrompt": "Add rate limiting to the login endpoint. Write the spec first and wait for my approval before touching any code.",
+  "author": { "github": "shettydev", "name": "Prathik Shetty" },
+  "mascot": { "body": "birdy", "color": "brand-sky", "activity": "thinking" },
+  "emoji": "🧭",
+  "agent": "claude-code",
+  "permissionMode": "ask-permissions"
+}
