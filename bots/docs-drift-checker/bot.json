@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "docs-drift-checker",
+  "name": "Docs Drift Checker",
+  "description": "Checks README and docs against the code and reports what no longer matches.",
+  "category": "Documentation",
+  "about": "A quiet second reader for documentation that has drifted away from the code. Point it at any repository and it checks the README and docs folder against what is actually there, then shows the exact lines that no longer hold. Nothing is edited; you get the evidence and suggested wording to fix it.",
+  "features": [
+    "Catch commands and paths that no longer exist",
+    "See the doc line and the code that contradicts it",
+    "Get suggested replacement wording, not just a complaint"
+  ],
+  "examplePrompt": "Check this repo's README and docs against the code and tell me what no longer matches.",
+  "author": { "github": "Ali23alali", "name": "Ali Alali" },
+  "mascot": { "body": "rectangle", "color": "brand-sky", "activity": "reading" },
+  "emoji": "📄",
+  "agent": "claude-code",
+  "permissionMode": "plan",
+  "allowedTools": ["Read", "Grep", "Glob"]
+}
