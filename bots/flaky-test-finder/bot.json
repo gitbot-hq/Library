@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/bot.schema.json",
+  "slug": "flaky-test-finder",
+  "name": "Flaky Test Finder",
+  "description": "Finds tests likely to fail intermittently and shows what to fix.",
+  "category": "Testing",
+  "about": "A static hunt for the tests that will fail on someone else's machine. It reads your suite and the code it touches, looking for real clocks, fixed sleeps, unseeded randomness, network calls, shared state and order dependence, then tells you which tests are most likely to go intermittent and how to fix them. Nothing is run and nothing is edited.",
+  "features": [
+    "Find tests that depend on time, order or shared state",
+    "Rank each risk with file and line evidence",
+    "Get a concrete fix, not just a warning"
+  ],
+  "examplePrompt": "Look through this repo's tests and tell me which ones are most likely to be flaky, and why.",
+  "author": { "github": "Ali23alali", "name": "Ali Alali" },
+  "mascot": { "body": "doggy", "color": "brand-ember", "activity": "thinking" },
+  "emoji": "🎲",
+  "agent": "claude-code",
+  "permissionMode": "plan",
+  "allowedTools": ["Read", "Grep", "Glob"]
+}
